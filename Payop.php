@@ -10,7 +10,7 @@
  *
  * @category        Payop
  * @package         payop/payop
- * @version         1.0.0
+ * @version         1.0.3
  * @author          Payop
  * @copyright       Copyright (c) 2017 Payop
  * @license         http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
