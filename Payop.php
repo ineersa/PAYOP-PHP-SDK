@@ -36,23 +36,12 @@ class Payop
         $this->secretKey = $secretKey;
     }
 
-    /**
-     * Return IP address
-     */
-    protected function getIp()
-    {
-        return $_SERVER['REMOTE_ADDR'];
-    }
 
     /**
      * Call API
      */
     public function api($method, $params = array())
     {
-        $ip = $this->getIp();
-        if (!in_array($method, $this->supportedPayopMethods)) {
-            throw new UnexpectedValueException('Method is not supported');
-        }
         if (isset($this->requiredPayopMethodsParams[$method])) {
             foreach ($this->requiredPayopMethodsParams[$method] as $rParam) {
                 if (!isset($params[$rParam])) {
