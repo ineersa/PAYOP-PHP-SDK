@@ -26,12 +26,7 @@ class Payop
         'refundPayment' => array('transactionId','refundAmount'),
     );
 
-    private $supportedPayopIp = array(
-        '87.236.16.172',
-        '127.0.0.1' // for debug
-    );
-
-    private $apiUrl = 'http://payop.com/api/';
+    private $apiUrl = 'https://payop.com/api/';
     private $publicKey;
     private $secretKey;
 
